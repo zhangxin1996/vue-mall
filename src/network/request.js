@@ -1,9 +1,10 @@
 import axios from 'axios'
+import {baseURL} from "../../secre"
 
 export function request1(config) {
   // 1. 创建 axios 实例
   const instance = axios.create({
-    baseURL: "http://123.207.32.32:8000/api/h8",
+    baseURL,
     timeout: 10000
   });
 
